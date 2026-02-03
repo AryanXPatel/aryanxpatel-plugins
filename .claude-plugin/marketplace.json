@@ -2,24 +2,29 @@
   "name": "aryanxpatel",
   "owner": {
     "name": "Aryan Patel",
-    "github": "AryanXPatel"
+    "email": "aryanxpatel@users.noreply.github.com"
   },
   "metadata": {
     "description": "AI-powered creative tools for Claude Code",
-    "website": "https://github.com/AryanXPatel"
+    "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "gemini-image-gen",
       "source": {
-        "type": "github",
+        "source": "github",
         "repo": "AryanXPatel/gemini-image-gen"
       },
       "description": "Generate stunning images with Gemini 3 Pro using viral prompt optimization",
       "version": "1.0.0",
-      "category": "ai-tools",
+      "author": {
+        "name": "Aryan Patel"
+      },
+      "homepage": "https://github.com/AryanXPatel/gemini-image-gen",
+      "repository": "https://github.com/AryanXPatel/gemini-image-gen",
+      "license": "MIT",
       "keywords": ["image", "gemini", "ai-art", "prompt-engineering"],
-      "featured": true
+      "category": "ai-tools"
     }
   ]
 }
