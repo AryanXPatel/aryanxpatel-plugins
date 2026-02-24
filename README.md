@@ -7,6 +7,9 @@ AI-powered creative tools for Claude Code.
 | Plugin | Description | Version |
 |--------|-------------|---------|
 | [gemini-image-gen](https://github.com/AryanXPatel/gemini-image-gen) | Generate stunning images with Gemini 3 Pro using viral prompt optimization | 1.0.0 |
+| [page-clone-brief](https://github.com/AryanXPatel/page-clone-brief) | Extract design tokens, layout, components, and data schemas from any website | 1.0.0 |
+
+---
 
 ### gemini-image-gen
 
@@ -25,6 +28,30 @@ Generate images directly from Claude Code using Google's Gemini 3 Pro Image mode
   <img src="assets/demo-images/sample-3.jpg" width="250" alt="Product shot">
 </p>
 
+---
+
+### page-clone-brief
+
+Extract everything Claude needs to rebuild any webpage from scratch. Produces a comprehensive JSON document ("Page Clone Brief") with 21 data layers extracted in parallel via Playwright.
+
+- **21 parallel extractors** - Colors, typography, spacing, layout, components, navigation, tables, responsive behavior
+- **Authenticated pages** - Save browser sessions and extract from login-protected pages
+- **Two extraction methods** - Standalone CLI or interactive via Playwright MCP
+- **Full page cloning** - Design tokens + page structure + content + data schemas
+
+**Extracted data layers:**
+
+| Category | What's Captured |
+|----------|----------------|
+| Design Tokens | Colors, typography, spacing, borders, shadows, breakpoints |
+| Page Structure | Layout type, regions, sticky/fixed positioning |
+| Components | Buttons, inputs, badges + full catalog (tables, cards, forms, modals, tabs, charts) |
+| Navigation | Sidebar items with icons/badges/children, header, breadcrumbs, tabs |
+| Data Schemas | Table columns with inferred types, sample rows, features |
+| Responsive | Layout state at desktop (1920px), tablet (768px), mobile (390px) |
+
+---
+
 ## Quick Install
 
 ### 1. Add This Marketplace
@@ -37,18 +64,19 @@ Generate images directly from Claude Code using Google's Gemini 3 Pro Image mode
 
 ```
 /plugin install gemini-image-gen@aryanxpatel
+/plugin install page-clone-brief@aryanxpatel
 ```
 
-### 3. Set Your API Key
+### 3. Use
 
-```bash
-export GEMINI_API_KEY=your_key_here
-```
-
-### 4. Generate Images
-
+**Image generation:**
 ```
 /image a cyberpunk city at night with neon lights
+```
+
+**Website cloning:**
+```
+/clone-site https://example.com/dashboard
 ```
 
 ## Commands
@@ -56,9 +84,9 @@ export GEMINI_API_KEY=your_key_here
 | Action | Command |
 |--------|---------|
 | Add marketplace | `/plugin marketplace add AryanXPatel/aryanxpatel-plugins` |
-| Install plugin | `/plugin install gemini-image-gen@aryanxpatel` |
-| Update plugin | `/plugin update gemini-image-gen@aryanxpatel` |
-| Remove plugin | `/plugin uninstall gemini-image-gen@aryanxpatel` |
+| Install plugin | `/plugin install <name>@aryanxpatel` |
+| Update plugin | `/plugin update <name>@aryanxpatel` |
+| Remove plugin | `/plugin uninstall <name>@aryanxpatel` |
 | List installed | `/plugin list` |
 
 ## Contributing

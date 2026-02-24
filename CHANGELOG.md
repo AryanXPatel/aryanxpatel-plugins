@@ -2,6 +2,15 @@
 
 All notable changes to this marketplace will be documented in this file.
 
+## [1.1.0] - 2026-02-25
+
+### Added
+- **page-clone-brief v1.0.0** - Full website extraction for page cloning
+  - 21 parallel extractors (design tokens, layout, components, navigation, tables, responsive)
+  - Authenticated page support via saved browser sessions
+  - CLI and Playwright MCP extraction methods
+  - Comprehensive Page Clone Brief JSON output format
+
 ## [1.0.0] - 2026-02-03
 
 ### Added

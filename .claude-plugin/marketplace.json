@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "AI-powered creative tools for Claude Code",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
@@ -25,6 +25,23 @@
       "license": "MIT",
       "keywords": ["image", "gemini", "ai-art", "prompt-engineering"],
       "category": "ai-tools"
+    },
+    {
+      "name": "page-clone-brief",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AryanXPatel/page-clone-brief.git"
+      },
+      "description": "Extract comprehensive design tokens, layout architecture, components, navigation, content, and data schemas from any website — produces a full Page Clone Brief JSON for rebuilding pages from scratch",
+      "version": "1.0.0",
+      "author": {
+        "name": "Aryan Patel"
+      },
+      "homepage": "https://github.com/AryanXPatel/page-clone-brief",
+      "repository": "https://github.com/AryanXPatel/page-clone-brief",
+      "license": "MIT",
+      "keywords": ["design-tokens", "website-cloning", "design-system", "page-extraction", "playwright", "reverse-engineering"],
+      "category": "dev-tools"
     }
   ]
 }
